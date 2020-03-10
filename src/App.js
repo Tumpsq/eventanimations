@@ -3,15 +3,19 @@ import "./styles.css";
 
 import SpinnerUploader from "./Components/SpinnerUploader/SpinnerUploader";
 import FillCircleUploader from "./Components/FillCircleUploader/FillCircleUploader";
+import CircleButton from "./Components/CircleButton/CircleButton";
 
 export default function App() {
   return (
     <div className="App">
-      <div>
-        <p>CLICK COMPONENT FOR DEMONSTRATION</p>
+      <div className="Container">
+        <p>UPLOAD ANIMATIONS</p>
+        <SpinnerUploader />
+        <FillCircleUploader />
       </div>
-      <SpinnerUploader />
-      <FillCircleUploader />
+      <div className="Container">
+        <CircleButton />
+      </div>
     </div>
   );
 }
